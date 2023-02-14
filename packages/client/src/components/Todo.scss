@@ -1,0 +1,137 @@
+@import '../styles/App.scss';
+
+.material-symbols-outlined {
+  user-select: none;
+}
+
+li {
+  display: flex;
+  width: 480px;
+  height: 40px;
+
+  margin-bottom: 4px;
+
+  .todo-contents {
+    display: flex;
+    align-items: center;
+
+    width: 432px;
+    height: 100%;
+
+    padding: 8px 16px;
+
+    background-color: #dddddd;
+    border-radius: 4px;
+
+    margin-right: 8px;
+
+    .description {
+      margin-right: 8px;
+    }
+
+    .checkmark-container {
+      cursor: pointer;
+      display: flex;
+      height: 24px;
+      width: 24px;
+
+      margin-right: 16px;
+
+      background-color: #dddddd;
+
+      border: 1px solid black;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #cccccc;
+      }
+
+      &:active {
+        background-color: #bbbbbb;
+      }
+    }
+
+    .edit-item-button {
+      cursor: pointer;
+      display: none;
+
+      &:hover {
+        span {
+          color: #555555;
+        }
+      }
+    }
+
+    .description-editor {
+      background-color: #cccccc;
+
+      height: 24px;
+
+      margin-right: 8px;
+      padding-left: 8px;
+
+      border: none;
+      border-radius: 2px 2px 0px 0px;
+      border-bottom: 1px solid #444444;
+
+      // Reset, but kept intact for accessibility
+      outline: 1px solid transparent;
+
+      &:focus {
+        background-color: #cccccc;
+      }
+    }
+
+    .save-button {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 24px;
+
+      color: #444444;
+      font-weight: 600;
+      background-color: transparent;
+
+      padding: 4px 8px;
+
+      border: none;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #cccccc;
+      }
+
+      &:active {
+        background-color: #bcbcbc;
+      }
+    }
+  }
+
+  .delete-item-button {
+    cursor: pointer;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    width: 40px;
+
+    padding: 8px;
+
+    border-radius: 4px;
+
+    color: #777777;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  &:hover {
+    .todo-contents .edit-item-button {
+      display: flex;
+      color: #777777;
+    }
+  }
+}

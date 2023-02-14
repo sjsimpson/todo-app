@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300..600,0..1');
+
+@function tint($color, $opacity) {
+  @return rgba(red($color), green($color), blue($color), $opacity);
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100vw;
+
+  align-items: center;
+
+  padding-top: 40px;
+}
+
+.header {
+  font-size: 40px;
+
+  margin-bottom: 24px;
+}

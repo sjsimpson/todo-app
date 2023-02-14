@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Create app",
+    "completed": false
+  },
+  {
+    "description": "Connect to Database",
+    "completed": false
+  },
+  {
+    "description": "Style frontend",
+    "completed": false
+  },
+  {
+    "description": "Clean up comments",
+    "completed": false
+  },
+  {
+    "description": "Submit to 1Solar",
+    "completed": false
+  }
+]
